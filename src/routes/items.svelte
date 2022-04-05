@@ -1,4 +1,5 @@
 <script>
+  import Page from "$lib/flowbite/Page.svelte";
   // The page always has access to props from `get`...
   export let items;
   // ...plus props from `post` when the page is rendered
@@ -7,7 +8,7 @@
   export let errors;
 </script>
 
-<section>
+<Page class="container mx-auto px-4">
   <ul>
     {#each items as item}
       <li>{item.titel}</li>
@@ -54,4 +55,4 @@
         </div>
       </fieldset>
   </div>
-</section>
+</Page>

@@ -2,7 +2,7 @@
     import {slide} from 'svelte/transition';
 </script>
 
-<section transition:slide>
+<section transition:slide={{duration: 400}}>
     <slot name="topbar"></slot>
     <article {...$$restProps}>
         <slot></slot>

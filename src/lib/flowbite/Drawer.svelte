@@ -3,7 +3,16 @@
   import BackDrop from './BackDrop.svelte';
   import { clickOutside } from "./clickOutside";
   export let open = false;
-  export let navData = [];
+  export let navData = [{
+     path: "/",
+     name: "Start",
+     icon: "home"
+  },
+  {
+     path: "/items",
+     name: "Jedit",
+     icon: "database"
+  }];
   const handClickOut = () => {
     if (open) {
       open = false;

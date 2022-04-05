@@ -6,6 +6,7 @@
   import Drawer from "$lib/flowbite/Drawer.svelte";
   import {supabase} from "$lib/db";
   import {user} from "$lib/stores"
+  import {navData} from "$lib/data"
   // if you want to enable windi devtools
   import { browser } from "$app/env";
   user.set(supabase.auth.user())
@@ -22,15 +23,12 @@
 </script>
 
 
-<NavBar bind:open>
-    <a href="/">Start</a>
-    <a href="/items">Items</a>
-</NavBar>
-<Drawer bind:open>
-
-</Drawer>
+<NavBar bind:open></NavBar>
+<Drawer {navData} bind:open></Drawer>
 
 <main id="main">
-  <slot />
+  {#if browser}
+    <slot />
+  {/if}
 </main>
 

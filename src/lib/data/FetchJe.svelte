@@ -1,5 +1,4 @@
 <script>
-  import SelectItem from './_SelectItem.svelte';
   import {dataJsonEditor} from './dataStore';
   if (!$dataJsonEditor.length) {
     dataJsonEditor.fetchAll();

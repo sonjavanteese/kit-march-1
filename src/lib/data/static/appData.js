@@ -37,19 +37,19 @@ export const appData = [
         "bg": "https://nwp-cgn.de/img/poser/imgA06.png"
       },
       "link": {
-        "path": "/users",
+        "path": "/items",
         "name": "Components",
         "icon": "user"
       }
     },
     {
-      "id": 0,
+      "id": 3,
       "head": {
         "titel": "Nwp-User",
         "sub": "User Details"
       },
       "link": {
-        "path": "/user/123",
+        "path": "/user",
         "name": "Details",
         "icon": "album",
         "exact": true

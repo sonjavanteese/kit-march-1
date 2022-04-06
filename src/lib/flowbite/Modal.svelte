@@ -11,7 +11,7 @@
       open = false;
     }
   };
-  const close = () => {
+  export const close = () => {
     open = !open;
   };
 </script>

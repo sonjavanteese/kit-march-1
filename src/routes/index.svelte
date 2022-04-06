@@ -4,6 +4,8 @@
     import {user} from "$lib/stores";
     import {supabase, logOut} from "$lib/db";
 
+    let promise;
+    
 </script>
 
 <Page class="container mx-auto px-4">

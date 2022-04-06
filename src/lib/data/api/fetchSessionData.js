@@ -27,3 +27,4 @@ export const fetchClassicDetail = async (id) => {
 	}
 };
 
+export default fetchClassic;

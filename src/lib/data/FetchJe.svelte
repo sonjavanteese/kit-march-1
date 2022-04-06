@@ -1,5 +1,5 @@
 <script>
-  import {dataJsonEditor} from './dataStore';
+  import {dataJsonEditor} from '../stores/store/dataJsonEditor';
   if (!$dataJsonEditor.length) {
     dataJsonEditor.fetchAll();
   }

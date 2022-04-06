@@ -1,7 +1,7 @@
 <script>
   import Modal from '$lib/flowbite/Modal.svelte';
-  import { fetchClassicDetail } from './../lib/data/api/fetchSessionData.js';
-  import FetchClassic from './../lib/data/FetchClassic.svelte';
+  import { fetchClassicDetail } from '$lib/data/api/fetchSessionData.js';
+  import FetchClassic from '$lib/data/FetchClassic.svelte';
   import Page from "$lib/flowbite/Page.svelte";
   
 
@@ -20,7 +20,7 @@
   
 </script>
 
-<Page>
+
     <div class="container mx-auto px-4">
     
         <FetchClassic let:payload>
@@ -55,7 +55,7 @@
         </FetchClassic>
     </div>
     
-</Page>
+
 
 <Modal bind:open={showModal} bind:close>
      <!-- Modal header -->

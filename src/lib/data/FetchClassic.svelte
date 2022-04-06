@@ -1,5 +1,5 @@
 <script>
-  import {dataSession} from './classStore';
+  import {dataSession} from '../stores/store/dataSession';
   if (!$dataSession.length) {
     dataSession.fetchAll();
   }

@@ -1,6 +1,7 @@
 <script>
 	import { user } from '../stores';
   import IconMenu from "../../assets/svg1/menu.svelte";
+  import database from "./svg/database.svg";
   export let open = false;
   const toggle = () => {
       open = !open;
@@ -12,7 +13,7 @@
     <div class="flex flex-wrap items-center mx-auto">
       <span class="flex items-center">
         <img on:click={toggle}
-          src="./img/database.png"
+          src={database}
           class="mr-3 h-8 h-8 cursor-pointer"
           alt="Flowbite Logo"
         />

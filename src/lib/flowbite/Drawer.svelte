@@ -53,6 +53,11 @@
    @import url('https://unpkg.com/css.gg/icons/css/database.css');
    @import url('https://unpkg.com/css.gg/icons/css/user.css');
    @import url('https://unpkg.com/css.gg/icons/css/album.css');
+   @import url('https://unpkg.com/css.gg/icons/css/pen.css');
+   @import url('https://unpkg.com/css.gg/icons/css/film.css');
+   /* @import url('https://unpkg.com/css.gg/icons/css/album.css');
+   @import url('https://unpkg.com/css.gg/icons/css/album.css');
+   @import url('https://unpkg.com/css.gg/icons/css/album.css'); */
    :root {
       -ggs: 14px;
    }

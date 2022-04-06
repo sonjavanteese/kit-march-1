@@ -12,11 +12,19 @@
   <nav class="text-white border-gray-200 pl-4 bg-gray-800">
     <div class="flex flex-wrap items-center mx-auto">
       <span class="flex items-center">
+        {#if $user}
         <img on:click={toggle}
           src={database}
           class="mr-3 h-8 h-8 cursor-pointer"
-          alt="Flowbite Logo"
+          alt="Logo"
         />
+        {:else}
+        <img
+          src={database}
+          class="mr-3 h-8 h-8 cursor-not-allowed"
+          alt="Logo"
+        />
+        {/if}
         <span class="self-center text-xl px-2 font-semibold whitespace-nowrap dark:text-white">
           Nwp-App
         </span>

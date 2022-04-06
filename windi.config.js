@@ -1,6 +1,7 @@
 import { defineConfig } from 'windicss/helpers';
 import plugin from 'windicss/plugin';
 
+// import colors from 'windicss/colors';
 const {transform} = require('windicss/helpers');
 
 export default defineConfig({

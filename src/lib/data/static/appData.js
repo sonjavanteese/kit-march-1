@@ -38,7 +38,7 @@ export const appData = [
     "link": {
       "path": "/jedit",
       "name": "Jedit",
-      "icon": "database"
+      "icon": "pen"
     }
   },
   {
@@ -52,7 +52,7 @@ export const appData = [
     "link": {
       "path": "/bb",
       "name": "Classic",
-      "icon": "database"
+      "icon": "film"
     }
   },
   {

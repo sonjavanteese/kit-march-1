@@ -11,7 +11,7 @@
 
 <Page>
 <header slot="topbar">
- <nav>
+ <nav class="flex items-center justify-center space-x-4">
   <a href="/jedit">Start</a>
   <a href="/jedit/list">List</a>
 </nav>   

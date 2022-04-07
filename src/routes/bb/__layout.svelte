@@ -15,7 +15,7 @@
 
 <Page>
 <header slot="topbar">
- <nav>
+ <nav class="flex items-center justify-center space-x-4">
   <a href="/bb">Blackburn</a>
   <a href="/bb/classic">BB-Classic</a>
 </nav>   

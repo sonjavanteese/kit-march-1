@@ -22,11 +22,7 @@
 
 
     <div class="container mx-auto px-4">
-    
         <FetchClassic let:payload>
-            <div slot="top">
-            <button on:click={() => (showModal = !showModal)} class="btn btn-blue">Toggle</button>
-            </div>
            
             <section class="grid sm:grid-cols-2 md:grid-cols-3 p-2 gap-2">
                 {#each payload as {titel,info,tags,screen,fileurl,thumb,id}}

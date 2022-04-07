@@ -23,7 +23,7 @@
   };
 </script>
 
-<aside use:clickOutside on:clickOutside={handClickOut} class="fixed top-0 left-0 bottom-0 z-30 bg-white w-64 transform {open ? 'translate-x-0' : '-translate-x-64'} transition transition-transform duration-500 delay-100">
+<aside use:clickOutside on:clickOutside={handClickOut} class="fixed top-0 left-0 bottom-0 z-30 bg-white w-64 transform {open ? 'translate-x-0' : '-translate-x-64'} transition transition-transform duration-400 delay-50">
   <div class="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
      <ul class="space-y-2">
         {#each navData as {name, path, icon}}

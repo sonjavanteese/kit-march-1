@@ -1,13 +1,17 @@
 <script>
     import Page from "$lib/flowbite/Page.svelte";
     import { getStores, navigating, page, session, updated } from '$app/stores';
+    let k;
     $: console.log($page.url.pathname);
+    $: {
+      k = $page.url.pathname;
+    }
 </script>
 
 
 
 
-{#key $page.url.pathname}
+{#key k}
 
 <Page>
 <header slot="topbar">

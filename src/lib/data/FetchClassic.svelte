@@ -1,8 +1,8 @@
 <script>
   import {dataSession} from '../stores/store/dataSession';
-  if (!$dataSession.length) {
+  /* if (!$dataSession.length) {
     dataSession.fetchAll();
-  }
+  } */
   export let refresh = true;
   let dataList;
   const unsubscribe = dataSession.subscribe((value) => {

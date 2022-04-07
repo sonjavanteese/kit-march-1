@@ -1,8 +1,12 @@
 <script>
     import {slide} from 'svelte/transition';
+    import { quintIn ,quintOut } from 'svelte/easing';
+    const op_dura = 400;
+    const op_out = {duration: op_dura, easing: quintOut};
+    const op_in = {duration: op_dura, easing: quintIn}
 </script>
 
-<section transition:slide={{duration: 400}}>
+<section out:slide={op_out} in:slide={op_in}>
     <slot name="topbar"></slot>
     <article {...$$restProps}>
         <slot></slot>
@@ -22,6 +26,7 @@
         overflow: hidden;
         background-color: var(--app-body-bg, #ffffff);
         color: var(--app-body-color, #444444);
+        z-index: +1;
     }
     article {
         flex: 1;

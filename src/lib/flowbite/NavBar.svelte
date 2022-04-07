@@ -18,16 +18,18 @@
           class="mr-3 h-8 h-8 cursor-pointer"
           alt="Logo"
         />
+
         {:else}
         <img
           src={database}
           class="mr-3 h-8 h-8 cursor-not-allowed"
           alt="Logo"
         />
+
         {/if}
-        <span class="self-center text-xl px-2 font-semibold whitespace-nowrap dark:text-white">
+        <a href="/" class="self-center text-xl px-2 font-semibold whitespace-nowrap dark:text-white">
           Nwp-App
-        </span>
+        </a>
       </span>
       <span class="flex-grow">
       </span>
